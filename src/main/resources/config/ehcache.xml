@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="false">  
+    <defaultCache overflowToDisk="true" eternal="false"/>  
+    <diskStore path="D:/cache" />  
+    <!--  
+        <cache name="zzugxy" overflowToDisk="true" eternal="false"  
+        timeToIdleSeconds="300" timeToLiveSeconds="600" maxElementsInMemory="1000"  
+        maxElementsOnDisk="10" diskPersistent="true" diskExpiryThreadIntervalSeconds="300"  
+        diskSpoolBufferSizeMB="100" memoryStoreEvictionPolicy="LRU" />  
+    -->  
+    <cache name="allCache" overflowToDisk="true" eternal="false"  
+        timeToIdleSeconds="300" timeToLiveSeconds="600" maxElementsInMemory="1000"  
+        maxElementsOnDisk="10" diskPersistent="false" diskExpiryThreadIntervalSeconds="300"  
+        diskSpoolBufferSizeMB="100" memoryStoreEvictionPolicy="LRU" />
+        
+     <cache name="hourCache" overflowToDisk="true" eternal="false"  
+        timeToIdleSeconds="300" timeToLiveSeconds="600" maxElementsInMemory="1000"  
+        maxElementsOnDisk="10" diskPersistent="true" diskExpiryThreadIntervalSeconds="300"  
+        diskSpoolBufferSizeMB="100" memoryStoreEvictionPolicy="LRU" />    
+     
+     <cache name="com.amar.db.ibatis.dao.AreaDAO" overflowToDisk="true" eternal="false"  
+        timeToIdleSeconds="300" timeToLiveSeconds="600" maxElementsInMemory="1000"  
+        maxElementsOnDisk="10" diskPersistent="true" diskExpiryThreadIntervalSeconds="300"  
+        diskSpoolBufferSizeMB="100" memoryStoreEvictionPolicy="LRU" />    
+           
+        
+</ehcache>  
