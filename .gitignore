@@ -18,8 +18,8 @@ local.properties
 #*.class
 *.war
 target/
-.classpath
-.project
+#.classpath
+#.project
 
 
 # External tool builders
